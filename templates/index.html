@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer_Vision</title>
+  </head>
+  <body background="{{ url_for('static', filename='bg.jpg')}}">
+       	  <h1 style="color:white">AI Security System</h1>
+    <img style="float:left" src="{{ url_for('calc') }}">
+    <div style="margin:50px 0px 0px 60%">    
+    <h2 style="color:white;"> Add Visitor </h2>
+	 <form action="/make/" method="post">	
+	<span style="color:white">Visitor_Name</span> <input type="text" name="data" value="{{request.form.data}}">
+		
+	<input type="submit" value="Photo">
+    </div>	 </form>
+	
+  </body>
+</html>
